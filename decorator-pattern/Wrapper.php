@@ -24,7 +24,7 @@ final class Wrapper implements WrapperInterface
      * Return list of contacts.
      *
      * NOTE: This is the decorator,
-     * It allows adding of functionality to the without to email service without refactoring EmailService class.
+     * Adding functionality to the email service without refactoring EmailService class.
      *
      * @return array
      */
