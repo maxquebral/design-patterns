@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":325:{a:2:{s:7:"defects";a:1:{s:41:"Test\Decorator\DecoratorTest::testGetName";i:4;}s:5:"times";a:4:{s:41:"Test\Decorator\DecoratorTest::testGetName";d:0.008;s:39:"Test\Decorator\WrapperTest::testGetName";d:0.012;s:41:"Test\Decorator\WrapperTest::testSendEmail";d:0.001;s:43:"Test\Decorator\WrapperTest::testGetContacts";d:0.001;}}}
