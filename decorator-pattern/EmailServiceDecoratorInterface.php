@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Decorator;
 
-interface WrapperInterface
+interface EmailServiceDecoratorInterface
 {
     /**
      * Return list of contacts.

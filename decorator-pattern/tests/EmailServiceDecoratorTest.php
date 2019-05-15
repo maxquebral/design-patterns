@@ -4,10 +4,10 @@ declare(strict_types=1);
 namespace Test\Decorator;
 
 use Decorator\EmailService;
-use Decorator\Wrapper;
+use Decorator\EmailServiceDecorator;
 use Test\DesignPatterns\TestCase;
 
-final class WrapperTest extends TestCase
+final class EmailServiceDecoratorTest extends TestCase
 {
     /**
      * Should return list of contacts.
@@ -16,7 +16,7 @@ final class WrapperTest extends TestCase
      */
     public function testGetContacts(): void
     {
-        $wrapper = new Wrapper(new EmailService());
+        $wrapper = new EmailServiceDecorator(new EmailService());
 
         self::assertEquals([
             'john.wick.continental.com',
@@ -31,7 +31,7 @@ final class WrapperTest extends TestCase
      */
     public function testGetName(): void
     {
-        $wrapper = new Wrapper(new EmailService());
+        $wrapper = new EmailServiceDecorator(new EmailService());
 
         self::assertEquals('john.doe@email.com', $wrapper->getEmailAddress());
     }
@@ -45,7 +45,7 @@ final class WrapperTest extends TestCase
     {
         $recipient = 'james.bond@agent.com';
 
-        $wrapper = new Wrapper(new EmailService());
+        $wrapper = new EmailServiceDecorator(new EmailService());
 
         self::assertEquals('Email sent to ' . $recipient, $wrapper->sendEmail($recipient));
     }

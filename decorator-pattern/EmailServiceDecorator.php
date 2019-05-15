@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Decorator;
 
-final class Wrapper implements WrapperInterface
+final class EmailServiceDecorator implements EmailServiceDecoratorInterface
 {
     /**
      * @var \Decorator\EmailService
