@@ -41,7 +41,7 @@ final class EmailServiceDecorator implements EmailServiceDecoratorInterface
      *
      * @return string
      */
-    public function getEmailAddress(): string
+    public function getEmail(): string
     {
         return $this->emailService->getEmail();
     }
@@ -53,7 +53,7 @@ final class EmailServiceDecorator implements EmailServiceDecoratorInterface
      *
      * @return string
      */
-    public function sendEmail(string $recipient): string
+    public function send(string $recipient): string
     {
         return $this->emailService->send($recipient);
     }

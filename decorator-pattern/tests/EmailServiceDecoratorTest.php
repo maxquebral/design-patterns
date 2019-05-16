@@ -33,7 +33,7 @@ final class EmailServiceDecoratorTest extends TestCase
     {
         $wrapper = new EmailServiceDecorator(new EmailService());
 
-        self::assertEquals('john.doe@email.com', $wrapper->getEmailAddress());
+        self::assertEquals('john.doe@email.com', $wrapper->getEmail());
     }
 
     /**
@@ -47,6 +47,6 @@ final class EmailServiceDecoratorTest extends TestCase
 
         $wrapper = new EmailServiceDecorator(new EmailService());
 
-        self::assertEquals('Email sent to ' . $recipient, $wrapper->sendEmail($recipient));
+        self::assertEquals('Email sent to ' . $recipient, $wrapper->send($recipient));
     }
 }

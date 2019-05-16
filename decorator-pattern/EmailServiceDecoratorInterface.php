@@ -17,7 +17,7 @@ interface EmailServiceDecoratorInterface
      *
      * @return string
      */
-    public function getEmailAddress(): string;
+    public function getEmail(): string;
 
     /**
      * Send email.
@@ -26,5 +26,5 @@ interface EmailServiceDecoratorInterface
      *
      * @return string
      */
-    public function sendEmail(string $recipient): string;
+    public function send(string $recipient): string;
 }
