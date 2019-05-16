@@ -11,7 +11,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Decorator\\": "decorator-pattern"
+      "DesignPatterns\\Resources\\": "Resources/",
+      "DesignPatterns\\Decorator\\": "Decorator/"
     },
     "files": [
       "TestCase.php"
@@ -19,7 +20,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Test\\Decorator\\": "decorator-pattern/tests"
+      "Test\\DesignPatterns\\Decorator\\": "Decorator/tests/"
     }
   }
 }

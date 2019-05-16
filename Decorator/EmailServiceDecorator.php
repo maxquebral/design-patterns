@@ -1,19 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace Decorator;
+namespace DesignPatterns\Decorator;
+
+use DesignPatterns\Resources\EmailService;
 
 final class EmailServiceDecorator implements EmailServiceDecoratorInterface
 {
     /**
-     * @var \Decorator\EmailService
+     * @var \DesignPatterns\Resources\EmailService
      */
     private $emailService;
 
     /**
      * Wrapper constructor.
      *
-     * @param \Decorator\EmailService $emailService
+     * @param \DesignPatterns\Resources\EmailService $emailService
      */
     public function __construct(EmailService $emailService)
     {
