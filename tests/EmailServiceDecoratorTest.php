@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Test\DesignPatterns\Decorator;
+namespace Test\DesignPatterns;
 
 use DesignPatterns\Decorator\EmailServiceDecorator;
 use DesignPatterns\Resources\EmailService;
-use Test\DesignPatterns\TestCase;
 
 final class EmailServiceDecoratorTest extends TestCase
 {
