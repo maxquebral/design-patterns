@@ -14,7 +14,8 @@
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./decorator-pattern</directory>
+            <directory suffix=".php">./Decorator</directory>
+            <directory suffix=".php">./Adapter</directory>
         </whitelist>
     </filter>
 </phpunit>
