@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace DesignPatterns\Adapter;
+namespace DesignPatterns\Structural\Adapter;
 
 final class Client
 {
     /**
-     * @var \DesignPatterns\Adapter\EmailAdapterInterface
+     * @var \DesignPatterns\Structural\Adapter\EmailAdapterInterface
      */
     private $emailAdapter;
 
     /**
      * ClientA constructor.
      *
-     * @param \DesignPatterns\Adapter\EmailAdapterInterface $emailAdapter
+     * @param \DesignPatterns\Structural\Adapter\EmailAdapterInterface $emailAdapter
      */
     public function __construct(EmailAdapterInterface $emailAdapter)
     {

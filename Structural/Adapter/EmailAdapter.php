@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DesignPatterns\Adapter;
+namespace DesignPatterns\Structural\Adapter;
 
 use DesignPatterns\Resources\EmailService;
 

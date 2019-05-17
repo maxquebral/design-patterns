@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace DesignPatterns\Decorator;
+namespace DesignPatterns\Structural\Decorator;
 
 interface EmailServiceDecoratorInterface
 {

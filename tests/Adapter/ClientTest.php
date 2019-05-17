@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Test\DesignPatterns\Adapter;
 
-use DesignPatterns\Adapter\Client;
-use DesignPatterns\Adapter\EmailAdapter;
 use DesignPatterns\Resources\EmailService;
+use DesignPatterns\Structural\Adapter\Client;
+use DesignPatterns\Structural\Adapter\EmailAdapter;
 use Test\DesignPatterns\TestCase;
 
 class ClientTest extends TestCase

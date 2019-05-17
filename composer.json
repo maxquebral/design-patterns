@@ -12,10 +12,7 @@
   "autoload": {
     "psr-4": {
       "DesignPatterns\\": ""
-    },
-    "files": [
-      "TestCase.php"
-    ]
+    }
   },
   "autoload-dev": {
     "psr-4": {
