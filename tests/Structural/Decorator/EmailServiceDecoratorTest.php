@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Test\DesignPatterns\Decorator;
+namespace Test\DesignPatterns\Structural\Decorator;
 
 use DesignPatterns\Resources\EmailService;
 use DesignPatterns\Structural\Decorator\EmailServiceDecorator;
